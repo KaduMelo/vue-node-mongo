@@ -1,9 +1,9 @@
-FROM node:10.9-slim
+FROM node:12
 
 COPY ./docker/entrypoint.sh /entrypoint/
 
 RUN ["chmod", "+x", "entrypoint/entrypoint.sh"]
-RUN yarn global add @vue/cli -g
+# RUN yarn global add @vue/cli -g
 
 # Copy or mount node app here
 WORKDIR /data/
