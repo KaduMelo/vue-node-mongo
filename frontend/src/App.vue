@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Clients from './pages/ListClients.vue'
+import Clients from './views/ListClients.vue'
 
 export default {
   name: 'App',
