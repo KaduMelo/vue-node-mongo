@@ -1,9 +1,12 @@
-import mongoose from 'mongoose'
+const mongoose = require('mongoose')
 
 mongoose.Promise = global.Promise
 
+
+const URL = process.env.DATABASE_URL || 'localhost'
+
 const config = {
-  uri: 'mongodb://mongoadmin:secret@localhost:27888/desafio?authSource=admin',
+  uri: 'mongodb://' + URL + ':27017/desafio',
   options: {
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -22,6 +25,6 @@ mongoose.connection.on('disconnect', () => {
 	console.log('Desconectado :(');
 });
 
-export default {
-  connect: () => mongoose.connect(config.uri, config.options)
+module.exports.connect = async () => {
+  mongoose.connect(config.uri, config.options)
 }

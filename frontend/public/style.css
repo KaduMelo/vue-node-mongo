@@ -60,3 +60,10 @@ th.active .arrow {
 .table-component__table-wrapper {
   margin: 1em 0;
 }
+
+.table-component__table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 50%;
+}

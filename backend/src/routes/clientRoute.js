@@ -1,4 +1,4 @@
-import ClientsModel from '../models/clients.js'
+const ClientsModel = require('../models/clients.js')
 
 const routes = (app) => {
     
@@ -22,4 +22,4 @@ const routes = (app) => {
         })
 }
 
-export default routes
+module.exports = routes

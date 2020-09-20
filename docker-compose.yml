@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  client:
+    build: ./frontend
+    depends_on:
+      - server
+    ports:
+      - 8080:8080
+    volumes:
+      - ./frontend:/data
+
+  server:
+    build: ./backend
+    ports:
+      - 3000:3000
+    volumes:
+      - ./backend:/data
+    environment:
+      - DATABASE_URL=db
+    depends_on:
+      - db
+    links:
+      - db
+
+  db:
+    image: "mongo"
+    ports:
+      - "27017:27017"
+    # "Linkando" os dados locais com os do container
+    volumes:
+      - "./data/db:/data/db"

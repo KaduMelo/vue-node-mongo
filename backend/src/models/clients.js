@@ -1,4 +1,4 @@
-import Mongoose from 'mongoose'
+const Mongoose = require('mongoose')
 
 const schema = new Mongoose.Schema({
     nome: { 
@@ -15,4 +15,4 @@ const schema = new Mongoose.Schema({
     }
 })
 
-export default Mongoose.model('Client', schema)
+module.exports =  Mongoose.model('Client', schema)
