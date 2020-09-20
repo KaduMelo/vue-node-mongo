@@ -10,7 +10,7 @@
     >
       <table-column show="nome" label="Nome"></table-column>
       <table-column show="valor.$numberDecimal" label="Valor Total" :formatter="formatMoney"></table-column>
-      <table-column show="dataPrimeiraInadimplencia" label="Data primeira Inadimplência" :formatter="formatDateBrazil"></table-column>
+      <table-column show="dataPrimeiraInadimplencia" label="Desde" :formatter="formatDateBrazil"></table-column>
     </table-component>
   </div>
 </template>
