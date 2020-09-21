@@ -78,4 +78,4 @@ db.getCollection('clients').insertMany([
       "valor": 13500.05,
       "dataPrimeiraInadimplencia": "2020-09-04T01:11:18.965Z"
     }
-  ])```
+  ])
