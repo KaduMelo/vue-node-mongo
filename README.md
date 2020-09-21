@@ -6,19 +6,19 @@ Vue, Express, Node, Mongo with Docker-compose setup for local development.
 
 1. Clone this repository
 
-> git clone https://github.com/jamesaud/VENoM-Docker
+`git clone https://github.com/KaduMelo/vue-node-mongo.git`
 
 2. Navigate into the directory VENoM-Docker
 
-> cd your-path-to/VENOM-Docker
+`cd your-path-to/vue-node-mongo`
 
 3. Build Docker Images
 
-> docker-compose build
+`docker-compose build`
 
-4. Run the stack :)
+4. Run the stack
 
-> docker-compose up
+`docker-compose up`
 
 Your app should be running on (if using native docker).: 
 
