@@ -34,6 +34,7 @@ Caso você queira adicinar dados no mongo, basta você seguir os passos abaixo:
 4. Dentro do database desafio crie uma collection chamado `clients`
 5. Dentro da collection execute o script:
 
+```
 db.getCollection('clients').insertMany([
     {
       "_id": "5f64f570599180f3f49ac093",
@@ -77,4 +78,4 @@ db.getCollection('clients').insertMany([
       "valor": 13500.05,
       "dataPrimeiraInadimplencia": "2020-09-04T01:11:18.965Z"
     }
-  ])
+  ])```
