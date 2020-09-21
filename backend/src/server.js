@@ -16,7 +16,7 @@ const ACESS_CONTROL_ALLOW_ORIGIN = process.env.ACESS_CONTROL_ALLOW_ORIGIN || 'ht
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', ACESS_CONTROL_ALLOW_ORIGIN);
+    res.setHeader('Access-Control-Allow-Origin', '*');
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
