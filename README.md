@@ -26,7 +26,7 @@ http://localhost:8080
 
 # Carga de dados
 
-Caso você queira adicinar dados no mongo, basta você seguir os passos abaixo:
+Caso você queira adicionar dados no mongo, basta você seguir os passos abaixo:
 
 1. Instale uma IDE para o mongo, eu uso o Robo 3T (https://snapcraft.io/robo3t-snap)
 2. Acesse o Robo 3T e conecta no banco com a conexão `localhost`, porta `27017`
